@@ -2,6 +2,7 @@
 The Player class contains methods that can be used to get a Player, and properties that can be changed to modify players.
 
 ## Getting Players
+The below methods are static methods.
 
 ### `Player` GetPlayer(`GameObject` gameObject)
 Gets a player using their GameObject, or null if the GameObject doesn't correspond with a Player.  
