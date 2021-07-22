@@ -1,4 +1,4 @@
-## Plugin<TConfig> : IPlugin<TConfig>
+## `Plugin<TConfig>` : `IPlugin<TConfig>`
 `Abstract`  
 Plugin class represents the base class for all plugins, as well as the entry point for the plugin's source code. Each plugin needs to have one class that inherits from the Plugin class in order to function. The plugin class must have an `OnEnabled` override, as well as an `OnDisabled` override that undoes what `OnEnabled` does.  
 
