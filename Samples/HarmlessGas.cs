@@ -8,6 +8,7 @@ using System;
 using PluginAPI;
 using PluginAPI.Events.EventArgs;
 using PluginAPI.Events;
+using PluginAPI.Interfaces;
 using VirtualBrightPlayz.SCP_ET.Player;
 
 namespace HarmlessGasPlugin
