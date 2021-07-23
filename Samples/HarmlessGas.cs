@@ -14,12 +14,12 @@ namespace HarmlessGasPlugin
 {
     public class MainPlugin : Plugin<PluginConfig> // Inherit your class from the ET plugin class. Note that you will need to create the generic class, and inherit that from "IConfig".
     {
-        public override void OnEnabled() // This method calls when the plugin is enabled.
+        public override void OnEnabled() // This method is called when the plugin is enabled.
         {
             ServerEvents.PlayerDamage += OnDamage; // Connect the event.
         }
 
-        public override void OnDisabled() // This method calls when the plugin is disabled.
+        public override void OnDisabled() // This method is called when the plugin is disabled.
         {
             ServerEvents.PlayerDamage -= OnDamage; // Disconnect the event to save memory.
         }
