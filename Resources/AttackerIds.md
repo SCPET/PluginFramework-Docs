@@ -6,7 +6,7 @@ Last Updated on July 22, 2021.
 * `Bleeding` - Killed by bleeding
 * `CardiacArrest` - Killed by Cardiac Arrest (SCP-1025)
 * `FallDamage` - Killed by fall damage *(currently not possible)*
-* `Fire` - Killed by fire
+* `Fire` - Killed by fire *(currently not possible)*
 * `GAS` - Killed by poisonous gas (lock room, hcz gas hall, etc)
 * `Suicide` - Suicide command
 * `TeslaGate` - Killed by tesla gate
