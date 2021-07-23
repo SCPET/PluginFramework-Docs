@@ -17,12 +17,12 @@ namespace HarmlessGasPlugin
     {
         public override void OnEnabled() // This method is called when the plugin is enabled.
         {
-            ServerEvents.PlayerDamage += OnDamage; // Connect the event.
+            PlayerEvents.PlayerDamage += OnDamage; // Connect the event.
         }
 
         public override void OnDisabled() // This method is called when the plugin is disabled.
         {
-            ServerEvents.PlayerDamage -= OnDamage; // Disconnect the event to save memory.
+            PlayerEvents.PlayerDamage -= OnDamage; // Disconnect the event to save memory.
         }
 
         public void OnDamage(PlayerDamageEvent ev)
