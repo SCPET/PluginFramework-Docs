@@ -12,7 +12,7 @@ using VirtualBrightPlayz.SCP_ET.Player;
 
 namespace HarmlessGasPlugin
 {
-    public class MainPlugin : Plugin<PluginConfig> // Inherit your class from the ET plugin class. Note that you will need to create the Config class, and inherit that from "IConfig".
+    public class MainPlugin : Plugin<PluginConfig> // Inherit your class from the ET plugin class. Note that you will need to create the generic class, and inherit that from "IConfig".
     {
         public override void OnEnabled() // This method calls when the plugin is enabled.
         {
