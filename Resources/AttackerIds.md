@@ -23,6 +23,7 @@ Last Updated on July 22, 2021.
 * `SCP914` - Killed by SCP-914
 * `SCP939` - Killed by SCP-939
 * `SCP966` - Killed by SCP-966
+* `SCP1162` - Killed by SCP-1162
 
 
 ## Misc
