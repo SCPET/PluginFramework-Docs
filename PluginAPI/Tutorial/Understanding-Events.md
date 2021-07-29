@@ -11,7 +11,7 @@ An event can be connected to using the addition assignment operator (`+=`), and 
 ```cs
 using PluginAPI.Events;
 
-// Inside the plugin's OnEnable method.
+// Inside the plugin's OnEnabled method.
 PlayerEvents.PlayerLeave += OnLeave; // This method should be defined in your code, with a parameter matching the required event arg. More info below.
 ```
 
@@ -23,7 +23,7 @@ Each event has its own event argument. Upon connecting an event, the IDE that yo
 using PluginAPI.Events;
 using PluginAPI.Events.EventArgs;
 
-// Inside the plugin's OnEnable method.
+// Inside the plugin's OnEnabled method.
 PlayerEvents.PlayerLeave += OnLeave;
 
 // Elsewhere
@@ -41,7 +41,7 @@ All event arguments have two things in common: A property called `Finalized`, an
 using PluginAPI.Events;
 using PluginAPI.Events.EventArgs;
 
-// Inside the plugin's OnEnable method.
+// Inside the plugin's OnEnabled method.
 PlayerEvents.PlayerPickupItem += OnPickupItem;
 
 // Elsewhere
@@ -54,9 +54,25 @@ private void OnPickupItem(PlayerPickupItemEvent ev)
     
     if (ev.Item.ItemId == "Keycard1") // The PlayerPickupItemEvent passes the item as an ItemBase class. The ID of the level 1 keycard is "Keycard1".
     {
-        ev.Disallow() // Prevents the event from executing.
+        ev.Disallow(); // Prevents the event from executing.
     }
 }
 ```
   
 Some events cannot be disallowed (eg. the `PlayerLeave` event). Events that cannot be disallowed will only be called once, and `Finalized` will be true. For information as to which events cannot be disallowed, reference the event argument documentation.
+
+## Disconnecting Events
+Events should be disconnected on the plugin's `OnDisable` method, so that the connections are not lingering around even though the plugin is disabled.  
+  
+**Example: Disconnecting an event when the plugin is disabled.**
+```cs
+public override void OnEnabled()
+{
+    PlayerEvents.PlayerPickupItem += OnPickupItem; // Enabling the event when the plugin is enabled.
+}
+
+public override void OnDisabled()
+{
+    PlayerEvents.PlayerPickupItem -= OnPickupItem; // Disabling the event when the plugin is disabled.
+}
+````
