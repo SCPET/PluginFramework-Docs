@@ -5,6 +5,7 @@ Last Updated on July 22, 2021.
 * `Admin` - Killed via admin panel
 * `Bleeding` - Killed by bleeding
 * `CardiacArrest` - Killed by Cardiac Arrest (SCP-1025)
+* `DRINK{ID}` - Killed by an SCP-294 drink. `{ID}` will be changed to the ID of the drink in all uppercase (eg. the lava drink's AttackerId would be `DRINKLAVA`).
 * `FallDamage` - Killed by fall damage *(currently not possible)*
 * `Fire` - Killed by fire *(currently not possible)*
 * `GAS` - Killed by poisonous gas (lock room, hcz gas hall, etc)
