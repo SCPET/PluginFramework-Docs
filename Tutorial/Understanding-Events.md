@@ -2,7 +2,7 @@
 An `Event` is a signal that is invoked upon an event occurring in-game. Plugin developers can attach code to execute when events are executed, which allows developers to know when things happen, and can also prevent them from happening (and implement custom behavior).  
 
 ## Accessing Events
-There are two types of events in Escape Together: `ServerEvents` and `PlayerEvents`. Both event type are their own static class, which is part of the `PluginAPI.Events` namespace (`using PluginAPI.Events;`). The class name determines what events can be found there. For example, events relating to actions inputted by players will be part of the `PlayerEvents` class, whereas events relating to in-game occurrences (eg. round restarting) are part of the `ServerEvents` class.  
+There are three types of events in Escape Together: `ServerEvents`, `PlayerEvents`, and `ScpEvents`. All three event type are their own static class, which is part of the `PluginAPI.Events` namespace (`using PluginAPI.Events;`). The class name determines what events can be found there. For example, events relating to actions inputted by players will be part of the `PlayerEvents` class, events relating to in-game occurrences (eg. round restarting) are part of the `ServerEvents` class, and events related to SCPs (eg. SCP-914 activating) are part of the `ScpEvents` class.  
 
 ## Subscribing Events
 An event can be subscribed to using the addition assignment operator (`+=`), and the connection can be unsubscribed using the subtraction assignment operator (`-=`). The lefthand side of the operator is the event that is part of the event class, whereas the righthand side of the operator is the method to be invoked when the event is invoked.  
