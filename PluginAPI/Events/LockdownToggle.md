@@ -1,5 +1,5 @@
 # `LockdownToggle` - ServerEvent
-Event is invoked when one of the game's lockdowns (Light Containment Zone lockdown, or SCP-008 lockdown) is modified.
+Event is invoked when one of the game's lockdowns (Light Containment Zone lockdown, or SCP-008 lockdown) is modified. Disallowing this event will stop the lockdown status from changing, but will **NOT** stop the levers from flipping.
 
 ## `Player` Player
 Get: Yes  
