@@ -10,6 +10,8 @@ The SCP: Escape Together framework provides a class called `Scp294DrinkBuilder`,
 ## Plugin Setup
 
 ```cs
+using PluginAPI;
+
 public override void OnEnabled()
 {
     ServerEvents.RoundStart += RegisterDrinks;
@@ -31,6 +33,8 @@ The Scp294DrinkBuilder has one constructor, which takes an ID of a drink, and a 
 After the drink has been constructed, there are various methods to configure the drink. All of the methods return the object, which means that methods can be chained together.  
 
 ```cs
+using PluginAPI;
+
 // Creating a drink called "lava", with the color orange, that instantly kills the player and displays an "It burns!" message.
 void RegisterDrinks()
 {
@@ -46,6 +50,8 @@ The above example would create the lava drink. The flags are added to tell the s
 The last step to adding a drink is registering it. This can be done via the `Map.RegisterSCP294Drink()` method.  
 
 ```cs
+using PluginAPI;
+
 void RegisterDrinks()
 {
     ...
