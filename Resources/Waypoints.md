@@ -125,7 +125,8 @@ Waypoints can be utilized via `Map.GetWaypointByName(name)`. This method returns
 * `scp860control`
 
 ### SURF
-TBA
+* `asurface`
+* `atower`
 
 ### MT
 TBA
@@ -134,4 +135,4 @@ TBA
 * `scp939`
 
 ### PD
-TBA
+* `pdcentral`
