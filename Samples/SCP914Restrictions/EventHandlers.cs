@@ -5,7 +5,7 @@ namespace ETTestingPlugin
     public class EventHandlers
     {
         public MainPlugin plugin;
-        public int uses = -1; // This variable is used by the rest of the code to determine how many uses are left. It is reset on round start.
+        public int uses = -1; // This field is used by the rest of the code to determine how many uses are left. It is reset on round start.
 
         public EventHandlers(MainPlugin plugin)
         {
