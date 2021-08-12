@@ -129,7 +129,14 @@ Waypoints can be utilized via `Map.GetWaypointByName(name)`. This method returns
 * `atower`
 
 ### MT
-TBA
+* `mtcorner`
+* `mtelevator1`
+* `mtelevator2`
+* `mtendoff`
+* `mtgenerator`
+* `mthall`
+* `mttroom`
+* `mtxroom`
 
 ### STORAGE
 * `scp939`
