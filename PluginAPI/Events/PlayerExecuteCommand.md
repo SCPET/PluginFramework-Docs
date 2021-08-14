@@ -6,6 +6,11 @@ Get: Yes
 Set: No  
 The player who invoked the command.
 
+## `string` RawInput
+Get: Yes  
+Set: No  
+The literal text that was inputted into the chat/admin menu without any modifications.
+
 ## `CommandInvokeInfo` InvokeInfo
 Get: Yes  
 Set: No  
