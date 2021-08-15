@@ -1,7 +1,7 @@
 # `TeslaTrigger` - ServerEvent
 Event is invoked when a tesla gate is triggered. Disallowing this event will prevent the tesla from triggering.
 
-## `IEntity` Target
+## `IEntity` Entity
 Get: Yes  
 Set: No  
 The entity that triggered the tesla gate.
