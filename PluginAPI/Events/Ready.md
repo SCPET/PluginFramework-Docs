@@ -1,2 +1,2 @@
 # `Ready` - ServerEvent
-Event is invoked when the server has booted up and is ready to accept connections. This event is only executed once. This event has no event arguments, and as such cannot be disallowed.
+Event is invoked when the server has booted up or the round has restarted and is ready to accept connections. This event has no event arguments, and as such cannot be disallowed.
