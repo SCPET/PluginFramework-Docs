@@ -1,7 +1,7 @@
 # `DoorInteract` - ServerEvent
 Event is invoked when a player interacts with a door successfully. Can be disallowed to prevent the door interaction.
 
-## NOTICE: AT THE MOMENT, THIS EVENT WILL NOT BE INVOKED. THIS WILL BE FIXED IN A LATER SCP:ET UPDATE.
+## NOTICE: AT THE MOMENT, THIS EVENT WILL NOT BE INVOKED. THIS WILL BE FIXED IN VERSION 0.2.1-alpha (August 17, 2021).
 
 ## `IEntity` Entity
 Get: Yes  
