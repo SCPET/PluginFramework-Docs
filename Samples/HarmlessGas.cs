@@ -27,8 +27,10 @@ namespace HarmlessGasPlugin
 
         public void OnDamage(PlayerDamageEvent ev)
         {
-            if (ev.AttackInfo.AttackerId == "GAS") // The "AttackerId" field of AttackInfo is unique for each attacker. In this case, the if statement will return true if the attacker is poisonous gas.
+            if (ev.AttackInfo.AttackerId == "GAS" && !ev.Finalized)
             {
+                // The "AttackerId" field of AttackInfo is unique for each attacker. In this case, the if statement will return true if the attacker is poisonous gas.
+                // We also check to ensure that Finalized is false, as Disallow() will throw an exception if called when Finalized is true (you cannot disallow something that already happened).
                 ev.Disallow(); // Disallow the event, preventing it from dealing the damage.
             }
         }
