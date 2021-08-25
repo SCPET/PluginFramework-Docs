@@ -53,7 +53,7 @@ Get: Yes
 Set: No  
 Gets the current class of the player.  
 
-### `int` ClassID
+### `int` ClassId
 Get: Yes  
 Set: Yes  
 Gets or sets the Class ID of the player. Setting the Class ID will change the player's class.  
@@ -153,6 +153,11 @@ Get: Yes
 Set: Yes  
 Gets or sets the player's position on the map.  
 
+### `IRoom` Room
+Get: Yes  
+Set: No  
+Gets an `IRoom` representing the room that the player is currently in. It is recommended to cache this value when appropriate, as every usage of this property performs a raycast to determine which room the player is physically located in.
+
 ### `float` SprintSpeed
 Get: Yes  
 Set: Yes  
@@ -163,7 +168,7 @@ Get: Yes
 Set: Yes  
 Gets or sets the player's stamina.
 
-### `ulong` SteamID
+### `ulong` SteamId
 Get: Yes  
 Set: No  
 Gets the Player's Steam ID.
