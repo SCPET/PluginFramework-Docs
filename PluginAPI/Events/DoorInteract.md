@@ -1,5 +1,5 @@
 # `DoorInteract` - ServerEvent
-Event is invoked when a player interacts with a door successfully. Can be disallowed to prevent the door interaction.
+Event is invoked when a player interacts with a door successfully. This event will not be fired if the door was unsuccessfully interacted with (eg. attempting to open a keycard door without a keycard). Can be disallowed to prevent the door interaction.
 
 ## NOTICE: AT THE MOMENT, THIS EVENT WILL NOT BE INVOKED. THIS WILL BE FIXED IN VERSION 0.2.1-alpha (August 17, 2021).
 
@@ -25,20 +25,20 @@ Get: Yes
 Set: No  
 The type of interaction that took place.  
 
-## `bool` IsClose
+## `DoorInteractMethod` InteractionMethod
 Get: Yes  
 Set: No  
-If this is `true`, the door is being closed.  Otherwise the door is being opened.
+Determines whether or not the door is being opened or closed.  
 
 ## `bool` IsNPCOrPlayer
 Get: Yes  
 Set: No  
-Determines whether or not the door is being opened by a player or by an entity. If this is `true`, the `Entity` property will not be null.
+Determines whether or not the door is being opened by a player or by an entity. If this is `true`, the `Entity` property will not be null.  
 
 ## `string` DoorName
 Get: Yes  
 Set: No  
-Gets the name of the door. Shorthand of `Door.doorName`.
+Gets the name of the door. Shorthand of `Door.doorName`.  
 
 ## `DoorType` DoorType
 Get: Yes  
@@ -48,4 +48,4 @@ Gets the door type. Shorthand of `Door.doorType`.
 ## `DoorAccess` Access
 Get: Yes  
 Set: No  
-Gets a struct representing who can open the door and whether or not it's locked.
+Gets a struct representing who can open the door and whether or not it's locked.  
